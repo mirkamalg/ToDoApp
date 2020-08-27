@@ -64,27 +64,35 @@ public class ShareTodosFragment extends Fragment {
         String title = Objects.requireNonNull(editTextTitle.getEditText()).getText().toString();
         String content = editTextContent.getText().toString();
 
-        repository.addNewTodoItemToNetworkDatabase(new TodoItemPOJO(id, title, content), new ResponseCallBack() {
-            @Override
-            public void handleTheResponseOfSuccessfulPost() {
-                Toast.makeText(getContext(), "Task is added successfully!", Toast.LENGTH_SHORT).show();
-                navController.popBackStack();
-            }
+        if (areInputsValid()) {
+            repository.addNewTodoItemToNetworkDatabase(new TodoItemPOJO(id, title, content), new ResponseCallBack() {
+                @Override
+                public void handleTheResponseOfSuccessfulPost() {
+                    Toast.makeText(getContext(), "Task is added successfully!", Toast.LENGTH_SHORT).show();
+                    navController.popBackStack();
+                }
 
-            @Override
-            public void handleTheResponseOfFailedPost() {
-                Toast.makeText(getContext(), "Couldn't add the task, try again!", Toast.LENGTH_SHORT).show();
-            }
+                @Override
+                public void handleTheResponseOfFailedPost() {
+                    Toast.makeText(getContext(), "Couldn't add the task, try again!", Toast.LENGTH_SHORT).show();
+                }
 
-            @Override
-            public void handleTheResponseOfFailedGet() {
-                // Not needed
-            }
+                @Override
+                public void handleTheResponseOfFailedGet() {
+                    // Not needed
+                }
 
-            @Override
-            public void handleTheResponseOfSuccessfulGet() {
-                //Not needed
-            }
-        });
+                @Override
+                public void handleTheResponseOfSuccessfulGet() {
+                    //Not needed
+                }
+            });
+        } else {
+            Toast.makeText(getContext(), "Title or body is empty!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private boolean areInputsValid() {
+        return !Objects.requireNonNull(editTextTitle.getEditText()).getText().toString().isEmpty() && !editTextContent.getText().toString().isEmpty();
     }
 }
