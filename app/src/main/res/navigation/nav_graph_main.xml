@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/todosFragment">
+
+    <fragment
+        android:id="@+id/todosFragment"
+        android:name="com.mirkamal.todoassignmentapp.ui.fragments.todos.TodosFragment"
+        android:label="TodosFragment"
+        tools:layout="@layout/fragment_todos">
+        <action
+            android:id="@+id/action_todosFragment_to_shareTodosFragment"
+            app:destination="@id/shareTodosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shareTodosFragment"
+        android:name="com.mirkamal.todoassignmentapp.ui.fragments.sharetodos.ShareTodosFragment"
+        android:label="ShareTodosFragment"
+        tools:layout="@layout/fragment_share_todos" />
+</navigation>
