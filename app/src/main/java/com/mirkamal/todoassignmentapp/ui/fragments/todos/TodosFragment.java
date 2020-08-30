@@ -15,7 +15,6 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.button.MaterialButton;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.mirkamal.todoassignmentapp.R;
 import com.mirkamal.todoassignmentapp.model.entity.TodoItem;
 import com.mirkamal.todoassignmentapp.network.ApiInitHelper;
@@ -72,15 +71,6 @@ public class TodosFragment extends Fragment {
 
     private void configureCallBack() {
         callBack = new ResponseCallBack() {
-            @Override
-            public void handleTheResponseOfSuccessfulPost() {
-                // Not needed
-            }
-
-            @Override
-            public void handleTheResponseOfFailedPost() {
-                // Not needed
-            }
 
             @Override
             public void handleTheResponseOfFailedGet() {

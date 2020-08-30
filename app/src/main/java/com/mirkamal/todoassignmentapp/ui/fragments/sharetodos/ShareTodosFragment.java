@@ -76,16 +76,6 @@ public class ShareTodosFragment extends Fragment {
                 public void handleTheResponseOfFailedPost() {
                     Toast.makeText(getContext(), "Couldn't add the task, try again!", Toast.LENGTH_SHORT).show();
                 }
-
-                @Override
-                public void handleTheResponseOfFailedGet() {
-                    // Not needed
-                }
-
-                @Override
-                public void handleTheResponseOfSuccessfulGet() {
-                    //Not needed
-                }
             });
         } else {
             Toast.makeText(getContext(), "Title or body is empty!", Toast.LENGTH_SHORT).show();

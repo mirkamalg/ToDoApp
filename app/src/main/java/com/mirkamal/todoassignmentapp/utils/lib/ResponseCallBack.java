@@ -2,12 +2,12 @@ package com.mirkamal.todoassignmentapp.utils.lib;
 
 public interface ResponseCallBack {
 
-    void handleTheResponseOfSuccessfulPost();
+    default void handleTheResponseOfSuccessfulPost() {};
 
-    void handleTheResponseOfFailedPost();
+    default void handleTheResponseOfFailedPost() {};
 
-    void handleTheResponseOfFailedGet();
+    default void handleTheResponseOfFailedGet() {};
 
-    void handleTheResponseOfSuccessfulGet();
+    default void handleTheResponseOfSuccessfulGet() {};
 
 }
