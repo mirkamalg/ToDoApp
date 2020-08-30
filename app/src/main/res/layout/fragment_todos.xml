@@ -38,7 +38,7 @@
         android:id="@+id/button_retry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/margin_retry_button"
         android:text="@string/try_again"
         android:textAllCaps="false"
         android:visibility="invisible"

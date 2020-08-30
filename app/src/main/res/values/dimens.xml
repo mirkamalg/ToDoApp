@@ -6,6 +6,11 @@
     <dimen name="padding_todo_item_layout">12dp</dimen>
     <dimen name="recycler_view_padding">8dp</dimen>
     <dimen name="fab_margins">16dp</dimen>
+    <dimen name="margin_retry_button">16dp</dimen>
+    <dimen name="margin_edit_text">16dp</dimen>
+    <dimen name="margin_edit_text_small">8dp</dimen>
+    <dimen name="margin_button_add">8dp</dimen>
+
 
 
 </resources>
