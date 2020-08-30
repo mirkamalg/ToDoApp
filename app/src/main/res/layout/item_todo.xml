@@ -7,7 +7,7 @@
     android:background="@drawable/bg_item_post"
     android:elevation="16dp"
     android:paddingHorizontal="12dp"
-    android:paddingVertical="12dp"
+    android:paddingVertical="@dimen/padding_todo_item_layout"
     android:layout_marginBottom="8dp">
 
     <TextView
@@ -15,7 +15,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
-        android:textSize="32sp"
+        android:textSize="@dimen/todo_item_title_size"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
@@ -28,7 +28,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
+        android:textSize="@dimen/todo_item_context_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
