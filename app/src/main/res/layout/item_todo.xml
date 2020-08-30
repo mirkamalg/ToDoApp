@@ -6,8 +6,8 @@
     android:layout_height="wrap_content"
     android:background="@drawable/bg_item_post"
     android:elevation="16dp"
-    android:paddingHorizontal="16dp"
-    android:paddingTop="16dp"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="12dp"
     android:layout_marginBottom="8dp">
 
     <TextView
