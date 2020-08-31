@@ -2,7 +2,7 @@
 <resources>
 
     <dimen name="todo_item_title_size">32sp</dimen>
-    <dimen name="todo_item_context_size">20sp</dimen>
+    <dimen name="todo_item_content_size">20sp</dimen>
     <dimen name="padding_todo_item_layout">12dp</dimen>
     <dimen name="recycler_view_padding">8dp</dimen>
     <dimen name="fab_margins">16dp</dimen>

@@ -72,6 +72,8 @@ public class TodosFragment extends Fragment {
     private void configureCallBack() {
         callBack = new ResponseCallBack() {
 
+
+
             @Override
             public void handleTheResponseOfFailedGet() {
                 progressBar.setVisibility(View.INVISIBLE);
