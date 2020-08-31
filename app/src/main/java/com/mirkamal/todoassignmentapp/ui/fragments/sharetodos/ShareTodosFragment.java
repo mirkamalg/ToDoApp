@@ -58,7 +58,6 @@ public class ShareTodosFragment extends Fragment {
 
     @OnClick(R.id.button_add)
     void onAddButtonClicked() {
-        //TODO implement note addition algo
 
         String id = UUID.randomUUID().toString();
         String title = Objects.requireNonNull(editTextTitle.getEditText()).getText().toString();
